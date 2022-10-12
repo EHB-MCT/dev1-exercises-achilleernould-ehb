@@ -9,14 +9,35 @@ let width = context.canvas.width;
 
 let height = context.canvas.height;
 
-drawLine();
+let r = Math.floor(Math.random() * 255);
+
+let g = Math.floor(Math.random() * 255);
+
+let b = Math.floor(Math.random() * 255);
+
+drawRectangle(25, 400);
+drawRectangle(50, 350);
+drawRectangle(75, 300);
+drawRectangle(100, 250);
+drawRectangle(125, 200);
+drawRectangle(150, 150);
+drawRectangle(175, 100);
+
+function drawRectangle(coo, size) {
+
+let r = Math.floor(Math.random() * 255);
+
+let g = Math.floor(Math.random() * 255);
+
+let b = Math.floor(Math.random() * 255);
+
+let color = "rgb(" + r + "," + g + "," + b +")";
+
+context.fillStyle = color;
+
+context.fillRect(coo, coo, size, size);
 
 
-function drawLine() {
-
-context.beginPath();
-context.moveTo(1, 2);
-
-context.stroke();
 
 }
+
