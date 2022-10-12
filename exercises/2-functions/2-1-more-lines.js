@@ -40,8 +40,4 @@ context.lineTo(margin, spacing * 6);
 context.moveTo(margin, spacing * 6);
 context.lineTo(width - margin, spacing * 6);
 context.stroke();
-
-
-
-
 }
