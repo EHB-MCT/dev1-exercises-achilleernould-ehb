@@ -29,3 +29,31 @@ export function strokeCircle(x, y, size) {
 	context.arc(x, y, size, 0, 2 * Math.PI);
 	context.stroke();
 }
+
+/**
+ *
+ * @param {Number} x
+ * @param {Number} y
+ * @param {Number} size
+ */
+export function fillCircle(x, y, size) {
+	context.beginPath();
+	context.ellipse(x, y, size, size, 0, 0, 2 * Math.PI);
+	context.fill();
+}
+
+/**
+ *
+ * @param {Number} r
+ * @param {Number} g
+ * @param {Number} b
+ * @returns
+ */
+
+export function rgb(r, g, b) {
+	return "rgb(" + r + "," + g + "," + b + ")";
+}
+
+export function rgba(r, g, b, a) {
+	return "rgb(" + r + "," + g + "," + b + "," + a + ")";
+}
